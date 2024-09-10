@@ -1,0 +1,503 @@
+<!DOCTYPE html><html lang="en" style="--wcm-color-fg-1: rgb(20,20,20); --wcm-color-fg-2: rgb(121,134,134); --wcm-color-fg-3: rgb(158,169,169); --wcm-color-bg-1: rgb(255,255,255); --wcm-color-bg-2: rgb(241,243,243); --wcm-color-bg-3: rgb(228,231,231); --wcm-color-overlay: rgba(0,0,0,0.1); --wcm-accent-color: #3396FF; --wcm-accent-fill-color: #FFFFFF; --wcm-z-index: 89; --wcm-background-color: #3396FF; --wcm-background-border-radius: 8px; --wcm-container-border-radius: 30px; --wcm-wallet-icon-border-radius: 15px; --wcm-wallet-icon-large-border-radius: 30px; --wcm-wallet-icon-small-border-radius: 7px; --wcm-input-border-radius: 28px; --wcm-button-border-radius: 10px; --wcm-notification-border-radius: 36px; --wcm-secondary-button-border-radius: 28px; --wcm-icon-button-border-radius: 50%; --wcm-button-hover-highlight-border-radius: 10px; --wcm-text-big-bold-size: 20px; --wcm-text-big-bold-weight: 600; --wcm-text-big-bold-line-height: 24px; --wcm-text-big-bold-letter-spacing: -0.03em; --wcm-text-big-bold-text-transform: none; --wcm-text-xsmall-bold-size: 10px; --wcm-text-xsmall-bold-weight: 700; --wcm-text-xsmall-bold-line-height: 12px; --wcm-text-xsmall-bold-letter-spacing: 0.02em; --wcm-text-xsmall-bold-text-transform: uppercase; --wcm-text-xsmall-regular-size: 12px; --wcm-text-xsmall-regular-weight: 600; --wcm-text-xsmall-regular-line-height: 14px; --wcm-text-xsmall-regular-letter-spacing: -0.03em; --wcm-text-xsmall-regular-text-transform: none; --wcm-text-small-thin-size: 14px; --wcm-text-small-thin-weight: 500; --wcm-text-small-thin-line-height: 16px; --wcm-text-small-thin-letter-spacing: -0.03em; --wcm-text-small-thin-text-transform: none; --wcm-text-small-regular-size: 14px; --wcm-text-small-regular-weight: 600; --wcm-text-small-regular-line-height: 16px; --wcm-text-small-regular-letter-spacing: -0.03em; --wcm-text-small-regular-text-transform: none; --wcm-text-medium-regular-size: 16px; --wcm-text-medium-regular-weight: 600; --wcm-text-medium-regular-line-height: 20px; --wcm-text-medium-regular-letter-spacing: -0.03em; --wcm-text-medium-regular-text-transform: none; --wcm-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Ubuntu, 'Helvetica Neue', sans-serif; --wcm-font-feature-settings: 'tnum' on, 'lnum' on, 'case' on; --wcm-success-color: rgb(38,181,98); --wcm-error-color: rgb(242, 90, 103); --wcm-overlay-background-color: rgba(0, 0, 0, 0.3); --wcm-overlay-backdrop-filter: none;"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><link rel="icon" href="/favicon.ico"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5,minimum-scale=1"><meta name="title" content="Lynex - Linea's native liquidity layer and AMM"><meta name="description" content="Trade your favourite tokens with low-slippage and efficient pricing. Provide liquidity to earn yields, get paid to vote for pools and more!"><meta name="twitter:title" content="Lynex - Linea's native liquidity layer and AMM"><meta name="twitter:description" content="Trade your favourite tokens with low-slippage and efficient pricing. Provide liquidity to earn yields, get paid to vote for pools and more!"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://app.lynex.fi/cover.png"><meta name="theme-color" content="#000000"><link rel="apple-touch-icon" href="/logo.png"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"><link rel="manifest" href="/manifest.json"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link rel="stylesheet" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"><title>Lynex</title><script async="" src="https://cdn.cookie3.co/scripts/analytics/latest/cookie3.analytics.min.js"></script><script defer="defer" src="/static/js/main.838e918b.js"></script><link href="/static/css/main.99335e89.css" rel="stylesheet"><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QHZWQ6S63W"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-QHZWQ6S63W")</script><script>var cookie3Options={siteId:515,additionalTracking:!0,cookielessEnabled:!0};window._paq=window._paq||[],function(){var e=document,t=e.createElement("script"),i=e.getElementsByTagName("script")[0];t.async=!0,t.src="https://cdn.cookie3.co/scripts/analytics/latest/cookie3.analytics.min.js",i.parentNode.insertBefore(t,i)}()</script><script src="https://client.sleekplan.com/sdk/e.js" async=""></script><style id="awesomeqa-style">
+    #awesomeqa-chat-widget {
+      z-index: var(--z-index);
+      position: absolute;
+      top: -10000px;
+      color-scheme: normal;
+    }
+    .awesomeqa-link {
+      position: fixed;
+      z-index: -100;
+      border-radius: 50%;
+      font-size: 4px !important;
+      display: flex;
+      color: #7e7e7e !important;
+      justify-content: center;
+      align-items: center;
+      right: var(--position-right);
+      bottom: var(--position-bottom);
+      width: var(--size);
+      height: var(--size);
+      text-decoration: none;
+    }
+    .awesomeqa-iframe {
+      background-color: transparent;
+      z-index: 9999;
+      border: none;
+      position: fixed;
+      overflow: visible;
+      color-scheme: normal;
+    }
+    .awesomeqa-widget-closed {
+      width: var(--closed-size);
+      height: var(--closed-size);
+      right: var(--closed-position-right);
+      bottom: var(--closed-position-bottom);
+    }
+    .awesomeqa-widget-opened {
+      width: var(--opened-width);
+      height: var(--opened-height);
+      right: var(--opened-position-right);
+      bottom: var(--opened-position-bottom);
+    }
+    .awesomeqa-widget-appear {
+      display: unset;
+    }
+    .awesomeqa-widget-disappear {
+      display: none;
+    }
+  </style><style data-styled="active" data-styled-version="5.3.11"></style><style type="text/css">
+
+            .i-sl-wrapper {
+                position: fixed;
+                z-index: 1000000;
+                border: 0px;
+                width: 430px;
+                background: transparent;
+                border-radius: 16px;
+                height: calc(100% - 30px);
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 5px 40px;
+                transition: all 0.3s ease;
+                overflow: hidden;
+            }
+            .i-sl-wrapper:not(.active) {
+                height: calc(100% - 150px);
+                top: auto;
+                opacity: 0;
+            }
+            .i-sl-wrapper.hidden {
+                display:none;
+            }
+            .i-sl-wrapper.expanded {
+                width: 700px;
+            }
+            .i-sl-wrapper.left {
+                left: 15px;
+                bottom: 15px;
+                top: 15px;
+            }
+            .i-sl-wrapper.right {
+                right: 15px;
+                bottom: 15px;
+                top: 15px;
+            }
+            .i-sl-widget {
+                width: 100%; 
+                height: 100%; 
+                border: 0;
+            }
+            .i-sl-wrapper.popup {
+                top: auto!important;
+                bottom: 0px!important;
+                height: 0px!important;
+                transition:ease all .4s!important;
+                opacity:0!important;
+                box-shadow: none;
+                width: 380px;
+            }
+            .i-sl-wrapper.popup.left {
+                left: 0px;
+            }
+            .i-sl-wrapper.popup.right {
+                right: 0px;
+            }
+            .i-sl-wrapper.popup-large {
+                width: 550px;
+            }
+            .i-sl-wrapper.tiny {
+                top: auto!important;
+                height: 0px!important;
+                transition:ease height .4s!important;
+                opacity:0!important;
+                width: 350px;
+            }
+
+
+
+            .i-sl-button {
+                font-family: Arial, Verdana, Helvetica, sans-serif;
+                -webkit-font-smoothing: antialiased;
+                position: fixed;
+                z-index:100000;
+                bottom: 0px;
+                left: 0px;
+                right: auto;
+                top: auto;
+                box-sizing: content-box!important;
+            }
+            .i-sl-button.inactive {
+                display: none;
+                opacity: 0;
+            }
+            .i-sl-button * {
+                box-sizing: content-box!important;
+            }
+            .i-sl-button-btn {
+                display: flex;
+                cursor: pointer;
+                background: #2196F3;
+                background-color: #e28743;
+                box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.06), 0 2px 32px 0 rgba(0, 0, 0, 0.16);
+                color: #FFFFFF;
+                cursor:pointer;
+                max-height: 40px;
+                height: 40px;
+                border-radius: 40px;
+                overflow:hidden;
+                opacity:1;
+                transition: all 0.3s ease;
+            }
+            .i-sl-button-btn.force-hidden {
+                opacity:0;
+                pointer-events: none;
+            }
+            .i-sl-button-btn:not(.active) {
+                opacity:0;
+                pointer-events: none;
+            }
+            .i-sl-button-desc {
+                line-height: 40px;
+            }
+            .i-sl-button-desc span {
+                display: block;
+                padding: 0 5px;
+                padding-right: 15px;
+                white-space: nowrap;
+                font-size: 13px;
+                text-align: center;
+                font-weight: 600;
+                letter-spacing: .8px;
+                max-width: 150px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .i-sl-button-logo {
+                background: transparent;
+            }
+            .i-sl-button-logo > div {
+                height: 36px;
+                width: 36px;
+                padding: 2px;
+            }
+            .i-sl-button-logo > div img {
+                border-radius: 50%;
+                display: block;
+                height: 36px;
+                width: 36px;
+                box-shadow: rgba(0, 0, 0, .1) 0px 3px 6px 0px, rgba(0, 0, 0, .08) 0px 1px 3px 0px;
+                margin: 0;
+                padding: 0;
+            }
+            .i-sl-button-logo > div svg {
+                border-radius: 50%;
+                display: block;
+                height: 36px;
+                width: 36px;
+                box-shadow: rgba(0, 0, 0, .1) 0px 3px 6px 0px, rgba(0, 0, 0, .08) 0px 1px 3px 0px;
+                margin: 0;
+                padding: 0;
+                fill: #ffffff;
+            }
+            .i-sl-button.left-middle {
+                left: 15px;
+                right: auto;
+            }
+            .i-sl-button.left-top {
+                bottom: auto;
+                left: 15px;
+                right: auto;
+                top: 15px;
+            }
+            .i-sl-button.left-bottom {
+                bottom: 15px;
+                left: 15px;
+                right: auto;
+                top: auto;
+            }
+            .i-sl-button.right-middle {
+                right: 15px;
+                left: auto;
+            }
+            .i-sl-button.right-top {
+                bottom: auto;
+                left: auto;
+                right: 15px;
+                top: 15px;
+            }
+            .i-sl-button.right-bottom {
+                bottom: 15px;
+                left: auto;
+                right: 15px;
+                top: auto;
+            }
+            .i-sl-button-counter {
+                display:none;
+                position: absolute;
+                top: -5px;
+                right: -5px;
+                z-index: 100;
+            }
+            .i-sl-button-counter.active {
+                display:block;
+            }
+            .i-sl-button-counter-inner {
+                background: #ed8484;
+                color: #FFF;
+                border-radius: 50%;
+                text-align: center;
+                height: 16px;
+                line-height: 16px;
+                width: 16px;
+                font-size: 9px;
+                font-weight: 700;
+                border: 2px solid #FFF;
+                font-family: Arial;
+            }
+
+            /* Full Button */
+            .i-sl-button-inner:not(.compact):hover .i-sl-button-btn {
+                box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16), 0 2px 32px 0 rgba(0, 0, 0, 0.36);
+            }
+
+            /* Compact Button */
+            .i-sl-button-inner.compact .i-sl-button-desc {
+                -webkit-transition: ease-in-out all .3s;
+                transition: ease-in-out all .3s;
+                max-width: 500px;
+            }
+            .i-sl-button-inner.compact:not(:hover) .i-sl-button-desc {
+                max-width: 0px;
+                overflow: hidden;
+            }
+            .i-sl-button-inner.compact .i-sl-button-btn {
+                position: relative;
+                z-index: 20;
+            }
+            .i-sl-button-inner.compact {
+                position: relative;
+                z-index: 10;
+            }
+            .i-sl-button-inner.compact .i-sl-button-btn.active {
+                overflow: initial;
+            }
+            .i-sl-button-inner.compact .i-sl-button-btn.active::after {
+                content: '';
+                -webkit-transition: ease-in-out all .3s;
+                transition: ease-in-out all .3s;
+                z-index: -1;
+                position: absolute;
+                bottom: 0px;
+                width: 20px;
+                height: 20px;
+                left: 20px;
+                margin-left: 0px;
+                background: #03a9f4;
+                background-color: #e28743;
+                opacity: 1;
+                border-radius: 0 0 3px 0;
+            }
+            .i-sl-button-inner.compact:hover .i-sl-button-btn::after {
+                opacity: 0;
+            }
+
+            /* Icon: empty */
+            .i-sl-button-inner.icon-none:not(.compact) .i-sl-button-logo > div {
+                width: 10px;
+                padding: 0px;
+            }
+            .i-sl-button-inner.icon-none.compact:hover .i-sl-button-logo > div {
+                width: 10px;
+                padding: 0px;
+            }
+
+            /* Middle Button */
+            .i-sl-button[class*='-middle'] {
+                top: 50%;
+                bottom: auto;
+                transform: translateY(-50%);
+                transform-origin: center;
+            }
+            .i-sl-button[class*='-middle'] .i-sl-button-btn {
+                flex-direction: column-reverse;
+                height: auto;
+                max-height: 100%;
+                width: 40px;
+                max-width: 40px;
+            }
+            .i-sl-button[class*='-middle'] .i-sl-button-desc {
+                writing-mode: vertical-lr;
+                transform: rotate(180deg);
+            }
+            .i-sl-button[class*='-middle'] .i-sl-button-desc span {
+                max-height: 150px;
+                padding: 5px 0;
+                padding-bottom: 15px;
+                text-overflow: initial;
+            }
+            .i-sl-button[class*='-middle'] .i-sl-button-inner.compact:not(:hover) .i-sl-button-desc {
+                max-height: 0px!important;
+                max-width: 40px!important;
+            }
+
+
+
+            /* Tools */
+            .t-sl-wrapper-opened {
+                overflow: hidden!important;
+            }
+            .t-sl-wrapper {
+                position: fixed;
+                top: 0px;
+                right: 0px;
+                left: 0px;
+                bottom: 0px;
+                z-index: 9999999999;
+                width: 100%;
+                height: 100%;
+                opacity: 1;
+                transition: ease opacity .4s;
+                transition-delay: .2s;
+            }
+            .t-sl-wrapper.hidden {
+                opacity: 0;
+                z-index: -1;
+                width: 0px;
+                height: 0px;
+                transition: ease opacity .4s;
+                transition-delay: .2s;
+            }
+            .t-sl-widget {
+                width: 100%; 
+                height: 100%; 
+                border: 0;
+            }
+
+
+
+            /* Full screen widget */
+            @media only screen and (max-width: 450px) {
+
+                .i-sl-wrapper {
+                    left: 0px!important;
+                    top: 0px!important;
+                    bottom: 0px!important;
+                    right: 0px!important;
+                    width: 100%!important;
+                    height: 100%;
+                    border-radius: 0px;
+                }
+            
+            }
+
+
+
+            /* Expanded => Full screen widget */
+            @media only screen and (max-width: 730px) {
+
+                .i-sl-wrapper.expanded {
+                    left: 0px!important;
+                    top: 0px!important;
+                    bottom: 0px!important;
+                    right: 0px!important;
+                    width: 100%!important;
+                    height: 100%;
+                    border-radius: 0px;
+                }
+            
+            }
+
+
+
+            /* Tablet */
+            @media only screen and (max-width: 900px) {
+
+                .i-sl-button-btn {
+                    max-height: 30px;
+                    height: 30px;
+                }
+                .i-sl-button-desc {
+                    line-height: 30px;
+                }
+                .i-sl-button-logo > div {
+                    height: 26px;
+                    width: 26px;
+                    padding: 2px;
+                }
+                .i-sl-button-logo > div img {
+                    height: 26px;
+                    width: 26px;
+                }
+                .i-sl-button-logo > div svg {
+                    height: 26px;
+                    width: 26px;
+                }
+                .i-sl-button.left-middle {
+                    left: 5px;
+                }
+                .i-sl-button.right-middle {
+                    right: 5px;
+                }
+
+                /* Compact Button */
+                .i-sl-button-inner.compact::after {
+                    width: 15px;
+                    height: 15px;
+                    left: 15px;
+                }
+                .i-sl-button-inner.compact .i-sl-button-btn.active::after {
+                    width: 15px;
+                    height: 15px;
+                    left: 15px;
+                }
+
+                /* Middle Button */
+                .i-sl-button[class*='-middle'] .i-sl-button-btn {
+                    width: 30px;
+                    max-width: 30px;
+                }
+
+            }
+
+
+
+            /* Smartphone */
+            @media only screen and (max-width: 500px) { 
+
+            }
+
+
+
+            /* Custom Badge */
+            [data-badge],
+            [data-badge-feedback],
+            [data-badge-changelog] {
+                position: relative!important;
+            }
+            [data-badge]::after,
+            [data-badge-feedback]::after,
+            [data-badge-changelog]::after {
+                display:none;
+                content: attr(data-count);
+                position: absolute;
+                right: -7px;
+                top: -7px;
+                width: 14px;
+                height: 14px;
+                line-height: 14px;
+                font-size: 9px;
+                font-weight: bold;
+                text-align: center;
+                border-radius: 50%;
+                color: #fff;
+                background-color: #ed8484;
+                font-family: Arial;
+            }
+            [data-count][data-badge]::after,
+            [data-count][data-badge-feedback]::after,
+            [data-count][data-badge-changelog]::after {
+                display:block;
+            }
+
+
+
+        </style><script charset="UTF-8" type="text/javascript" src="./122783f0-a331-4a8b-bf43-d22e715d4a09.js"></script></head><body><noscript>You need to enable JavaScript to run Lynex.</noscript><div id="root"><div class="main"><div data-rk=""><style>[data-rk]{--rk-blurs-modalOverlay:blur(0px);--rk-fonts-body:SFRounded, ui-rounded, "SF Pro Rounded", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";--rk-radii-actionButton:9999px;--rk-radii-connectButton:12px;--rk-radii-menuButton:12px;--rk-radii-modal:24px;--rk-radii-modalMobile:28px;--rk-colors-accentColor:#DF832F;--rk-colors-accentColorForeground:#FFF;--rk-colors-actionButtonBorder:rgba(255, 255, 255, 0.04);--rk-colors-actionButtonBorderMobile:rgba(255, 255, 255, 0.1);--rk-colors-actionButtonSecondaryBackground:rgba(255, 255, 255, 0.08);--rk-colors-closeButton:rgba(255, 255, 255, 0.7);--rk-colors-closeButtonBackground:rgba(255, 255, 255, 0.08);--rk-colors-connectButtonBackground:#000;--rk-colors-connectButtonBackgroundError:#FF494A;--rk-colors-connectButtonInnerBackground:linear-gradient(0deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.12));--rk-colors-connectButtonText:#FFF;--rk-colors-connectButtonTextError:#FFF;--rk-colors-connectionIndicator:#30E000;--rk-colors-downloadBottomCardBackground:linear-gradient(126deg, rgba(0, 0, 0, 0) 9.49%, rgba(120, 120, 120, 0.1) 71.04%), #050505;--rk-colors-downloadTopCardBackground:linear-gradient(126deg, rgba(120, 120, 120, 0.1) 9.49%, rgba(0, 0, 0, 0) 71.04%), #050505;--rk-colors-error:#FF494A;--rk-colors-generalBorder:rgba(255, 255, 255, 0.08);--rk-colors-generalBorderDim:rgba(255, 255, 255, 0.04);--rk-colors-menuItemBackground:rgba(255, 255, 255, 0.08);--rk-colors-modalBackdrop:rgba(0, 0, 0, 0.7);--rk-colors-modalBackground:#000;--rk-colors-modalBorder:rgba(255, 255, 255, 0.08);--rk-colors-modalText:#FFF;--rk-colors-modalTextDim:rgba(255, 255, 255, 0.2);--rk-colors-modalTextSecondary:rgba(255, 255, 255, 0.6);--rk-colors-profileAction:rgba(255, 255, 255, 0.1);--rk-colors-profileActionHover:rgba(255, 255, 255, 0.2);--rk-colors-profileForeground:rgba(255, 255, 255, 0.06);--rk-colors-selectedOptionBorder:rgba(224, 232, 255, 0.1);--rk-colors-standby:#FFD641;--rk-shadows-connectButton:0px 4px 12px rgba(0, 0, 0, 0.1);--rk-shadows-dialog:0px 8px 32px rgba(0, 0, 0, 0.32);--rk-shadows-profileDetailsAction:0px 2px 6px rgba(37, 41, 46, 0.04);--rk-shadows-selectedOption:0px 2px 6px rgba(0, 0, 0, 0.24);--rk-shadows-selectedWallet:0px 2px 6px rgba(0, 0, 0, 0.24);--rk-shadows-walletLogo:0px 2px 16px rgba(0, 0, 0, 0.16);}</style> <div class="header-wrap fixed w-full z-[120]"><div class="banner justify-between items-center z-500"><div class="flex flex-col md:flex-row w-full justify-center items-center text-xs md:text-sm"><p class="md:mr-4 text-center mb-2 md:mb-0">Lynex joins <span class="font-bold">Linea's SURGE program</span>. Add liquidity, earn <span class="font-bold">LXP-L</span> points.</p><div class="font-medium flex flex-row flex-wrap justify-center"><a class="underline underline-offset-2" href="https://referrals.linea.build/?refCode=oGi7YJuUKT" target="_blank"><p class="mr-0 md:mr-2">Learn More</p></a></div></div><img src="/images/common/close-button2.svg" alt="" class="cursor-pointer w-6 h-6 ml-6"></div><div class="bg-transparent transition-all duration-300 ease-in-out"><div class="header px-4 2xl:px-12 py-6"><a href="/"><img class="logo relative z-10" alt="" src="/images/header/logo.svg"></a><ul class="navigation absolute z-20 justify-center hidden xl:flex items-center w-[calc(100vw-120px)]"><li class="links"><a class="font-light undefined" href="/swap">SWAP</a></li><li class="links"><a class="font-light special" href="/singlesided">SINGLE DEPOSITS</a></li><li class="links"><a class="font-light undefined" href="/liquidity">POOLS</a></li><li class="links"><div class="relative"><div class="flex items-center space-x-1 cursor-pointer relative z-10  font-light text-white"><span>MANAGE</span><img alt="dropdown" src="/images/header/dropdown-arrow.svg" class="rotate-180 transition-all duration-150 ease-in-out"></div></div></li><li class="links"><div class="relative"><div class="flex items-center space-x-1 cursor-pointer relative z-10  font-light text-white"><span>MORE</span><img alt="dropdown" src="/images/header/dropdown-arrow.svg" class="rotate-180 transition-all duration-150 ease-in-out"></div></div></li></ul><div class="tracking-[2px] xl:px-[25px] xl:tracking-[2px] items-center font-semibold text-white  text-sm md:text-sm relative z-20  xl:text-base  mobile-btn f-f-fg hidden xl:flex"><div class="line1"></div><div class="line2"></div><div style=""><button type="button interact-button">CONNECT WALLET</button></div></div><button class="bg-transparent w-8 xl:hidden"><img alt="" src="/images/header/hamburger-menu.png"></button></div></div></div><div class="top-bg !z-[1000] xl:hidden top-minus"><div class="inner-tab"><div class="top-navigation"><a href="/"><img class="logo-2" alt="" src="/images/header/logo.svg"></a><div class="closeButton"><img alt="" src="/images/common/close-button2.svg"></div></div><div class="bottom-navigation w-full"><ul class="flex flex-col items-center justify-center"><li class="links"><a class="false no-link text-white" href="/swap">SWAP</a></li><li class="links"><a class="false no-link text-white" href="/singlesided">SINGLE DEPOSITS</a></li><li class="links"><a class="false no-link text-white" href="/liquidity">POOLS</a></li><li class="links"><div><div class="relative"><div class="flex items-center space-x-1 cursor-pointer relative z-10  font-light text-white"><span>MANAGE</span><img alt="dropdown" src="/images/header/dropdown-arrow.svg" class="rotate-180 transition-all duration-150 ease-in-out"></div></div></div></li><li class="links"><div><div class="relative"><div class="flex items-center space-x-1 cursor-pointer relative z-10  font-light text-white"><span>MORE</span><img alt="dropdown" src="/images/header/dropdown-arrow.svg" class="rotate-180 transition-all duration-150 ease-in-out"></div></div></div></li></ul><div class="mobile-btn f-f-fg"><div class="line1"></div><div class="line2"></div><div style=""><button type="button interact-button">CONNECT WALLET</button></div></div></div></div></div><div class="fixed flex items-center justify-center inset-0 min-h-screen bg-black bg-opacity-[0.4] backdrop-blur-[6px] z-0 invisible opacity-0"></div><div class="fixed z-0 invisible opacity-0 inset-0 min-h-screen flex items-center justify-center flex-col"><div><div class="max-w-[92%]      md:w-[540px] px-3 md:px-6  border border-[#ffffff33] mx-auto w-full px-3 py-3 md:py-5 bg-white/10 backdrop-blur-2xl rounded-[20px]"><div class="flex items-center justify-between"><div class="flex items-center"><p class="text-lg md:text-[22px] f-f-fg text-white font-medium"></p></div><button class="focus:outline-none"><img alt="" src="/images/common/close-button1.svg"></button></div><div class="py-3 mt-5 sm:min-w-[450px] lg:max-w-[540px]"></div></div></div></div><div class="hero-container"><div><p class="hero-header">The Native Liquidity Layer Of Linea</p><p class="hero-text">Step into the heart of Linea's intrinsic on-chain liquidity marketplace. Driven by state-of-the-art DEX infrastructure, we present an exceptionally efficient DeFi solution. Immerse yourself in the capabilities of Lynex now!</p><div class="hero-actions"><div role="button" class="sc-aXZVg gXhVei md:max-w-[250px] xl:max-w-[350px] f-f-fg ">SWAP NOW<img src="/images/home/launch-app-arrow.svg" alt=""></div></div></div><img class="hero-image" src="/images/home/hero.png" alt="hero image"></div><div class="details-container"><div class="details-body container-4"><div class="details-item"><div class="details-item-value">$ 0</div><div class="details-item-title">TOTAL VALUE LOCKED</div></div><div class="details-item"><div class="details-item-value">$ 0</div><div class="details-item-title">TOTAL Trading Volume</div></div><div class="details-item"><div class="details-item-value">2d 11h 46m</div><div class="details-item-title">EPOCH 30 STARTS IN</div></div></div></div><div class="box"><div class="left-side"><div class="frame-1"><div><img class="image" alt="Image" src="/images/home/home-swap.png"></div><div><div class="header">Swap Your Tokens</div><div class="subheader">With Low Slippage</div><div class="paragraph"><p class="p">Lynex's smart routing, deep liquidity, and latest AMM technology allow you to enjoy low slippage and high return when swapping one cryptocurrency for another.</p></div><div class="link-wrapper group"><div class="text-wrapper">Swap Now</div><img class="group-hover:w-[40px] w-[30px] duration-300 ease-in-out" alt="Spear" src="/images/common/spear.svg"></div></div></div></div><div class="right-side"><div class="frame-2"><img class="image-2" alt="Image" src="/images/home/home-stake.png"><div class="text"><div class="header">Stake and Earn</div><div class="subheader">Passive Income</div><div class="paragraph"><p class="p">Stake your assets for instant passive income streams. No deposit or withdrawal fees. You have full control over your funds.</p></div><div class="link-wrapper group"><div class="text-wrapper">Start Staking</div><img class="group-hover:w-[40px] w-[30px] duration-300 ease-in-out" alt="Spear" src="/images/common/spear.svg"></div></div></div><div class="frame-3"><div class="rotative-img"><img src="/images/home/Liquidity3.png"><img class="rotate1" src="/images/home/Liquidity3-2.png"><img class="rotate2" src="/images/home/Liquidity3-3.png"></div><div class="text"><div class="header">Liquidity Layer</div><div class="subheader">for Linea blockchain</div><div class="paragraph"><p class="p">Lynex was designed to onboard the next generation of protocols to the Linea blockchain by opening up a free market for LYNX emissions. Protocols can bribe veLYNX holders or acquire veLYNX to redirect emissions to their pools, offering a flexible and capital efficient solution to bootstrap and scale liquidity.</p></div><div class="link-wrapper group"><div class="text-wrapper">Go Vote</div><img class="group-hover:w-[40px] w-[30px] duration-300 ease-in-out" alt="Spear" src="/images/common/spear.svg"></div></div></div></div></div><div class="how-wrapper relative lg:overflow-hidden"><div class="how-to-work-wrapper mx-auto container-4"><div class="heading-section"><div class="heading-title text-themeOrange f-f-fg">How It Works</div><div class="heading-desc">Control Lynex's destiny by locking into veLYNX. </div><div class="heading-switch"><div class="heading-switch-item active">veLYNX Holders</div><div class="heading-switch-item">Protocols</div></div></div><div class="cards-wrapper-desktop"><div class="card-wrapper"><div class="inner-card"><div class="bg-image"><img class="image-bg" alt="" src="/images/home/how-1.svg"></div><img alt="" src="/images/home/how-1.svg"><p class="home-step">STEP 1</p><p class="card-title text-themeOrange f-f-fg">Lock LYNX Token</p><p class="card-subtitle f-f-fg">and Receive veLYNX</p><p class="card-para">Lock LYNX for up to 2 years to receive vote-escrowed LYNX (veLYNX). The longer the lock, the more veLYNX you receive.</p></div></div><div class="card-wrapper"><div class="inner-card"><div class="bg-image"><img class="image-bg" alt="" src="/images/home/how-2.svg"></div><img alt="" src="/images/home/how-2.svg"><p class="home-step">STEP 2</p><p class="card-title text-themeOrange f-f-fg">Use veLYNX to Vote</p><p class="card-subtitle f-f-fg">for Your Favorite Pools</p><p class="card-para">veLYNX gives you the power to decide which pools should receive LYNX emissions.</p></div></div><div class="card-wrapper"><div class="inner-card"><div class="bg-image"><img class="image-bg" alt="" src="/images/home/how-3.svg"></div><img alt="" src="/images/home/how-3.svg"><p class="home-step">STEP 3</p><p class="card-title text-themeOrange f-f-fg">Receive Bribes</p><p class="card-subtitle f-f-fg">and Trading Fees</p><p class="card-para">Voting for a pool lets you claim a share of the weekly bribes and trading fees.</p></div></div></div></div><div class="slick-slider slider-main slick-initialized" dir="ltr"><div class="slick-list"><div class="slick-track" style="opacity: 1; transform: translate3d(0px, 0px, 0px);"><div data-index="-1" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 0px;"><div><div class="card-wrapper-mobile" tabindex="-1" style="width: 100%; display: inline-block;"><div class="inner-card-mobile min-h-[370px]"><img class="step-img-mobile" alt="" src="/images/home/how-3.svg"><p class="step-mobile">STEP 3</p><p class="card-title-mobile text-themeOrange f-f-fg">Receive Bribes</p><p class="card-subtitle-mobile f-f-fg">and Trading Fees</p><p class="card-para-mobile">Voting for a pool lets you claim a share of the weekly bribes and trading fees.</p></div></div></div></div><div data-index="0" class="slick-slide slick-active slick-current" tabindex="-1" aria-hidden="false" style="outline: none; width: 0px;"><div><div class="card-wrapper-mobile" tabindex="-1" style="width: 100%; display: inline-block;"><div class="inner-card-mobile min-h-[370px]"><img class="step-img-mobile" alt="" src="/images/home/how-1.svg"><p class="step-mobile">STEP 1</p><p class="card-title-mobile text-themeOrange f-f-fg">Lock LYNX Token</p><p class="card-subtitle-mobile f-f-fg">and Receive veLYNX</p><p class="card-para-mobile">Lock LYNX for up to 2 years to receive vote-escrowed LYNX (veLYNX). The longer the lock, the more veLYNX you receive.</p></div></div></div></div><div data-index="1" class="slick-slide slick-active" tabindex="-1" aria-hidden="false" style="outline: none; width: 0px;"><div><div class="card-wrapper-mobile" tabindex="-1" style="width: 100%; display: inline-block;"><div class="inner-card-mobile min-h-[370px]"><img class="step-img-mobile" alt="" src="/images/home/how-2.svg"><p class="step-mobile">STEP 2</p><p class="card-title-mobile text-themeOrange f-f-fg">Use veLYNX to Vote</p><p class="card-subtitle-mobile f-f-fg">for Your Favorite Pools</p><p class="card-para-mobile">veLYNX gives you the power to decide which pools should receive LYNX emissions.</p></div></div></div></div><div data-index="2" class="slick-slide" tabindex="-1" aria-hidden="true" style="outline: none; width: 0px;"><div><div class="card-wrapper-mobile" tabindex="-1" style="width: 100%; display: inline-block;"><div class="inner-card-mobile min-h-[370px]"><img class="step-img-mobile" alt="" src="/images/home/how-3.svg"><p class="step-mobile">STEP 3</p><p class="card-title-mobile text-themeOrange f-f-fg">Receive Bribes</p><p class="card-subtitle-mobile f-f-fg">and Trading Fees</p><p class="card-para-mobile">Voting for a pool lets you claim a share of the weekly bribes and trading fees.</p></div></div></div></div><div data-index="3" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 0px;"><div><div class="card-wrapper-mobile" tabindex="-1" style="width: 100%; display: inline-block;"><div class="inner-card-mobile min-h-[370px]"><img class="step-img-mobile" alt="" src="/images/home/how-1.svg"><p class="step-mobile">STEP 1</p><p class="card-title-mobile text-themeOrange f-f-fg">Lock LYNX Token</p><p class="card-subtitle-mobile f-f-fg">and Receive veLYNX</p><p class="card-para-mobile">Lock LYNX for up to 2 years to receive vote-escrowed LYNX (veLYNX). The longer the lock, the more veLYNX you receive.</p></div></div></div></div><div data-index="4" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 0px;"><div><div class="card-wrapper-mobile" tabindex="-1" style="width: 100%; display: inline-block;"><div class="inner-card-mobile min-h-[370px]"><img class="step-img-mobile" alt="" src="/images/home/how-2.svg"><p class="step-mobile">STEP 2</p><p class="card-title-mobile text-themeOrange f-f-fg">Use veLYNX to Vote</p><p class="card-subtitle-mobile f-f-fg">for Your Favorite Pools</p><p class="card-para-mobile">veLYNX gives you the power to decide which pools should receive LYNX emissions.</p></div></div></div></div><div data-index="5" tabindex="-1" class="slick-slide slick-cloned" aria-hidden="true" style="width: 0px;"><div><div class="card-wrapper-mobile" tabindex="-1" style="width: 100%; display: inline-block;"><div class="inner-card-mobile min-h-[370px]"><img class="step-img-mobile" alt="" src="/images/home/how-3.svg"><p class="step-mobile">STEP 3</p><p class="card-title-mobile text-themeOrange f-f-fg">Receive Bribes</p><p class="card-subtitle-mobile f-f-fg">and Trading Fees</p><p class="card-para-mobile">Voting for a pool lets you claim a share of the weekly bribes and trading fees.</p></div></div></div></div></div></div><ul class="slick-dots" style="display: block;"><li class="slick-active"><button>1</button></li><li class=""><button>2</button></li><li class=""><button>3</button></li></ul></div></div><div id="footer" class="footer-wrap"><img class="invisible hidden sm:visible sm:block absolute left-10 bottom-0 pt-6 max-w-[550px]" src="/images/footer/bg-footer.svg"><div class="upper-footer-wrapper"><div class="info"><p class="heading">The Native Liquidity Layer Of Linea</p><p>Step into the heart of Linea's intrinsic on-chain liquidity marketplace. Driven by state-of-the-art DEX infrastructure, we present an exceptionally efficient DeFi solution. Immerse yourself in the capabilities of Lynex now!</p></div><div class="links"><div class="column"><p class="heading">Other</p><a class="link" href="/">Home</a><a class="link" href="/swap">Swap</a><a class="link" href="/liquidity">Liquidity</a></div><div class="column"><p class="heading">More of Lynex</p><div class="link hover:underline" id="subitem-0">Docs</div><div class="link hover:underline" id="subitem-1">Legal Disclaimer</div></div></div></div><div class="lower-footer-wrapper"><div class="flex space-x-4"><img src="/images/header/logo.svg" width="110"><img src="/images/footer/consensys.svg" width="110"></div><p>Copyright © 2024 Lynex. All rights reserved.</p><div class="flex items-center space-x-[14px]"><a href="https://twitter.com/LynexFi" rel="noreferrer" target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="max-w-[36px] text-themeOrange text-[36px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"></path></svg></a><a href="https://medium.com/@lynexfi" rel="noreferrer" target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" class="max-w-[36px] text-themeOrange text-[36px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zM768 317.7l-40.8 39.1c-3.6 2.7-5.3 7.1-4.6 11.4v287.7c-.7 4.4 1 8.8 4.6 11.4l40 39.1v8.7H566.4v-8.3l41.3-40.1c4.1-4.1 4.1-5.3 4.1-11.4V422.5l-115 291.6h-15.5L347.5 422.5V618c-1.2 8.2 1.7 16.5 7.5 22.4l53.8 65.1v8.7H256v-8.7l53.8-65.1a26.1 26.1 0 0 0 7-22.4V392c.7-6.3-1.7-12.4-6.5-16.7l-47.8-57.6V309H411l114.6 251.5 100.9-251.3H768v8.5z"></path></svg></a><a href="https://discord.gg/3BFkJjPmB3" rel="noreferrer" target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 640 512" class="max-w-[36px] text-themeOrange text-[36px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"></path></svg></a><a href="https://t.me/lynexfi" rel="noreferrer" target="_blank"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" class="max-w-[36px] text-themeOrange text-[36px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"></path></svg></a></div></div></div></div><div class="Toastify"></div></div></div><script type="text/javascript">window.$sleek=[],window.SLEEK_PRODUCT_ID=83903301,d=document,s=d.createElement("script"),s.src="https://client.sleekplan.com/sdk/e.js",s.async=1,d.getElementsByTagName("head")[0].appendChild(s)</script><script id="awesomeqa-chat-widget-script" type="text/javascript" src="https://awesomeqa.xyz/web-support/chat-widget.js" communityid="c220075d-6e61-4abd-b6e4-d9f09751cfce" config="{&quot;widgetIconUrl&quot;: &quot;https://staging.lynex.fi/images/common/ai-chatbot.svg&quot;, &quot;openedChatbotWidth&quot;: &quot;370px&quot;}"></script><div id="awesomeqa-chat-widget" class="awesomeqa-widget-appear" style="--z-index: 2147483646;"><a id="awesomeqa-chat-widget-link" href="https://home.awesomeqa.xyz" class="awesomeqa-link" style="--size: 88px; --position-right: 16px; --position-bottom: 16px;">Powered by<br>AwesomeQA</a><iframe id="awesomeqa-chat-widget-iframe" class="awesomeqa-iframe awesomeqa-widget-closed" style="--closed-size: 88px; --opened-width: 370px; --opened-height: min(calc(95vh - 16px - 0px), 900px); --closed-position-right: 16px; --closed-position-bottom: 16px; --opened-position-right: 16px; --opened-position-bottom: 16px; max-height: 600px;"></iframe></div><svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-QHZWQ6S63W"></script><iframe id="verify-api" src="https://verify.walletconnect.com/3640d0bf5a1aa2386759bbd5019fe083" style="display: none;"></iframe><wcm-modal></wcm-modal></body></html>
